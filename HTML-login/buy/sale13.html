@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="오늘의 집">
+    <meta name="keywords" content="HTML5, CSS, JavaScript">
+
+    <!-- 웹 페이지와 외부 자원간의 관계를 정의, 주로 스타일시트(CSS) 파일 링크에 사용됨. -->
+    <link rel="stylesheet" type="text/css" href="../../CSS/buy.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="../../Images/logo.PNG">
+    <title>오늘의 집</title>
+</head>
+<body>
+
+    <!-- 헤더영역 시작 -->
+    <!-- 사이트의 소개나 네비게이션 등을 표시하는 영역 -->
+    <header class="header">
+        <!-- 네이게이션 영역 시작 -->
+        <div>
+            <a href="../index_login.html"><img src="../../Images/homelog.jpg" class="logo"></a>
+        </div>
+        <nav class="nav">
+            <a class="nav_a" href="../intro.html">소개</a>
+            <a class="nav_a" href="../home.html">집들이</a>
+            <a class="nav_a" href="../store_main.html">스토어</a>
+            <a class="nav_a" href="../notice.html">공지사항</a>
+
+            <a class="nav_menu" href="../mypage.html" style="margin-left: 1%;">마이페이지</a>
+        </nav>
+        <!-- 네비게이션 영역 끝 -->
+    </header>
+    <!-- 헤더영역 끝 -->
+    
+    <!-- 상품 영역 -->
+    <div class="product">
+        <table>
+            <tr class="pd_area">
+                <td rowspan="6"class="pd_area_img"><img src="../../Images/product/sale13.webp"></td>
+                <td class="empty"> </td>
+                <td colspan="2">
+                    <p class="market">아트밀</p>
+                    <p class="pd_name" >크리스마스 명화액자 포스터 -크리스마스 마스</p>
+                    <p class="percent">51%</p>
+                    <p class="origin">9,900원</p>
+                    <p class="saleprice">4,900원</p>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2">
+                    <p class="benefit">혜택</p>
+                    <p>38p 적립</p>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2" class="deli_info">
+                    <p class="deli">배송</p>
+                    <p>2,500원</p>
+                    <p class="normal">일반택배</p>
+                    <p class="etc_deli">v 제주도/도서산간 지역 5,000원</p>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="count">개수</td>
+                <td class="num">
+                    <select style="text-align: center;">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td style="width: 350px;" colspan="2"></td>
+            </tr>
+            <tr style="height: 70px">
+                <td></td>
+                <td style="font-size: 100%;">주문금액</td>
+                <td class="total_price">4,900원</td>
+            </tr>
+            <tr class="buy_btn">
+                <td></td>
+                <td></td>
+                <td><button type="submit" id="cart_btn" onclick="cart()">장바구니</button></td>
+                <td><button type="submit" onclick="buy()">바로구매</button></td>
+            </tr>
+        </table>
+    </div>
+
+   <!-- 푸터 영역 시작 -->
+    <div class="footer">
+        <footer>
+            <div class="footer_detail">
+                <br>
+                <p style="font-size: 12px; margin-top: 30px;">고객센터 ></p>
+                <p style="font-size: 30px; font-weight:bold;">1234-1234</p>
+                <p>
+                    평일 10:00~16:00(주말 & 공휴일 제외)
+                </p>
+                <div class="etc_div">
+                    <a href="#">브랜드 스토리</a>
+                    <a href="#">회사소개</a>
+                    <a href="#">공지사항</a>
+                    <a href="#">고객센터</a>
+                    <a href="#">제휴/광고 문의</a>
+                    <a href="#">입점신청 문의</a>
+                </div>
+                <br>
+                <p style="margin-top: 10px;">
+                    상호명: (주)버킷플레이스 
+                </p>
+                <p>
+                    제작자: 이지은
+                </p>
+                <p>
+                    소속: 공주대학교 컴퓨터공학부
+                </p>
+            </div>
+        </footer>
+    </div>
+    <!-- 푸터 영역 끝 -->
+
+ 
+    <script type="text/javascript" src="../../Javascript/common.js"></script> 
+</body>
+</html>

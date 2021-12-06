@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1">
+	<!-- 웹 페이지와 외부 자원간의 관계를 정의, 주로 스타일시트(CSS)파일 링크에 사용됨. -->
+	<link rel="shortcut icon" type="image/x-icon" href="../Images/logo.PNG">
+	<link rel="stylesheet" type="text/css" href="../CSS/login.css">
+	<title>아이디 찾기</title>
+
+</head>
+<body>
+	<section class="login">
+		<h1>아이디 찾기</h1>
+		<form method="post">
+			<div class="input_info">
+				<input type="text" name="ID" id="findInfo_name" placeholder="이름" autocomplete="off" required>
+			</div>
+			<div class="input_info">
+				<input type="text" name="mobile" id="findInfo_mobile" placeholder="전화번호(-없이)" autocomplete="off" required>
+			</div>
+			<div class="login_btn">
+				<button type="submit" style="font-family:'noto';" onclick="certification_number_receive()">인증번호 받기</button> 
+			</div>
+            <div class="input_info">
+				<input type="text" name="number" id="certification_number" placeholder="인증번호 6자리 입력" autocomplete="off" required>
+			</div>
+            <div class="login_btn">
+				<button type="submit" style="font-family:'noto';" onclick="findId_chk(); return false;">아이디 찾기</button> 
+			</div>
+		</form>
+		<div class="caption">
+			<a href="../index.html">홈으로&nbsp; |</a>
+			<a href="signup.html">&nbsp;회원가입 |</a>
+			<a href="findPW.html">&nbsp;비밀번호 찾기</a>
+		</div>
+	</section>
+
+    <script type="text/javascript" src="../Javascript/common.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+@font-face {
+    src: url("../Fonts/NotoSansKR-Medium.otf");
+    font-family: "noto"
+}
+
+*{
+	margin: 0; 
+	padding: 0; 
+	box-sizing: border-box;
+}
+
+body{
+ 	font-family: 'noto';
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	height: 100vh;
+ 	background-color: #faf1e3;
+ 	background-size: cover;
+}
+
+.signup {
+	position: relative;
+}
+
+.signup h1 {
+	font-size: 32px; 
+	color: gray;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.input_info {
+	width: 400px; 
+	position: relative;
+	margin-top: 5%;
+}
+
+.input_info input {
+	width: 100%;
+	padding: 20px 10px 10px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #999;
+	font-size: 18px; 
+	color: rgb(95, 95, 95);
+	outline: none;
+}
+
+.input_info input::placeholder {
+	font-weight: bold;
+	font-family: 'noto';
+}
+
+.input_info select {
+	width: 130px; 
+	height: 50px;
+	border: none;
+	border-bottom: 1px solid #999;
+	background-color: transparent;
+	font-family: 'noto';
+	color: rgb(95, 95, 95);
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.signup_btn {
+	margin-top: 10%;
+}
+
+.signup_btn button{
+	width: 100%; 
+	height: 50px;
+	background: #e49517;
+	color: rgb(255, 255, 255);
+	font-size: 100%;
+	font-family: 'noto';
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.caption {
+	margin-top: 8%;
+	text-align: center;
+	font-weight: bold;
+}
+
+.caption a{
+	font-size: 100%; 
+	color: rgb(95, 95, 95);
+	text-decoration: none;
+}

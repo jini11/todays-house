@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="viewport" content="width=device-width", initial-scale="1">
+<!-- 웹 페이지와 외부 자원간의 관계를 정의, 주로 스타일시트(CSS)파일 링크에 사용됨. -->
+<link rel="shortcut icon" type="image/x-icon" href="../Images/logo.PNG">
+<link rel="stylesheet" type="text/css" href="../CSS/signup.css">
+<title>회원가입</title>
+
+</head>
+<body>
+<section class="signup">
+	<h1>회원가입</h1> 
+	<form name="form" >  
+		<div class="input_info">
+			<input id="sign_up_id" type="text" name="ID" autocomplete="off" placeholder="아이디" required> 
+		</div>
+		<div class="input_info">
+			<input id="sign_up_pw" type="password" name="PassWord" autocomplete="off" placeholder="비밀번호" required> 
+		</div>
+		<div class="input_info">
+			<input id="sign_up_pw_chk" type="password" name="PassWord" autocomplete="off" placeholder="비밀번호 확인" required> 
+		</div>
+		<div class="input_info"> 
+			<input id="sign_up_name" type="text" name="Name" autocomplete="off" placeholder="이름" required> 
+		</div>
+		<div class="input_info" style="margin-right: 30px;"> 
+			<table><col width="130px;"><col width="130px;"><col width="130px;">
+				<tr>
+					<td>
+						<input id="birth_year" type="number" name="year" autocomplete="off" placeholder="년(4자)" required> 
+					</td>
+					<td>
+						<select id="birth_month">
+							<option value="">월</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+						</select>
+					</td>
+					<td>
+						<select id="birth_day">
+							<option value="">일</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+							<option value="24">24</option>
+							<option value="25">25</option>
+							<option value="26">26</option>
+							<option value="27">27</option>
+							<option value="28">28</option>
+							<option value="29">29</option>
+							<option value="30">30</option>
+							<option value="31">31</option>
+						</select>
+					</td>
+				</tr>
+			</table>
+		</div>
+		</div>
+		<div class="input_info">
+			<input id="sign_up_mobile" type="text" name="phone" autocomplete="off" placeholder="휴대전화(-없이)" required> 
+		</div>
+		<div class="input_info">
+			<input id="sign_up_email" type="email" name="email" autocomplete="off" placeholder="이메일" required> 
+		</div>
+		<div class="signup_btn">
+			<button type="submit" style="font-family:'noto';" onclick="sign_up_chk(); return false;">회원가입하기</button>
+		</div>
+		<div class="caption">
+			<a href="../index.html">홈으로&nbsp; |</a>
+			<a href="login.html">&nbsp;로그인 |</a>
+			<a href="findID.html">&nbsp;아이디 찾기 |</a>
+			<a href="findPW.html">&nbsp;비밀번호 찾기</a>
+		</div>
+	</form>
+</section>
+
+<script type="text/javascript" src="../Javascript/common.js"></script>
+</body>
+</html>
